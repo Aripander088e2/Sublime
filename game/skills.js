@@ -35,7 +35,7 @@ skills = [
 	{
 		id: 'intelligence',
 		name: 'Intelligence',
-		maxSkillLevel: 20
+		maxSkillLevel: 200
 	},	
 	{
 		id: 'knifebidextrous',
