@@ -117,7 +117,7 @@ function convertCoinsNow() {
 
 
 function convertCoinsNowBar() {
-	runBar('convertCoinsNow', 0.075 / Math.pow(0.3, gameData.convertedCoinsSinceTravel))
+	runBar('convertCoinsNow', 0.075 / Math.pow(0.2, gameData.convertedCoinsSinceTravel))
 }
 
 function convertCoinsNowBarEnd() {
