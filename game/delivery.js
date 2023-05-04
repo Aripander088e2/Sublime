@@ -129,9 +129,9 @@ function updateValuesDelivery () {
 		colorChanger('decreaseJuiceSoldButton', "#BBBBBB")
 	
 	if (gameData.deliveryTypeToggle == 2 && gameData.fasterTransport > 0)
-		gameData.juiceBulkAmountMax = 500
+		gameData.juiceBulkAmountMax = 1500
 	else if (gameData.deliveryTypeToggle == 3)
-		gameData.juiceBulkAmountMax = 2000
+		gameData.juiceBulkAmountMax = 20000
 	else
 		gameData.juiceBulkAmountMax = 100
 	
