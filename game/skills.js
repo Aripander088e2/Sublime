@@ -98,8 +98,8 @@ function eatBar() {
 
 function eatBarEnd() {
     gameData.eat += gameData.foodNutritionValue * (gameData.nutritionists + 1)
-    if (gameData.eat > 200)
-        gameData.eat = 200
+    if (gameData.eat > 400)
+        gameData.eat = 400
 }
 
 function autoCollecting() {
