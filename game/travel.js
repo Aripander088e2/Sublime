@@ -107,8 +107,8 @@ mainTabs.push (
 )
 
 function convertCoinsNow() {
-    if (gameData.coins >= 1e4 && (gameData.convertCoinsNowBar == 0 || gameData.convertCoinsNowBar == 100)) {
-        gameData.coins -= 1e4
+    if (gameData.coins >= 1e3 && (gameData.convertCoinsNowBar == 0 || gameData.convertCoinsNowBar == 100)) {
+        gameData.coins -= 1e3
 		gameData.convertedCoinsSinceTravel += 9
 		gameData.convertCoinsNowBar = 0
         convertCoinsNowBar()
@@ -121,7 +121,7 @@ function convertCoinsNowBar() {
 }
 
 function convertCoinsNowBarEnd() {
-    gameData.megaCoins += 1
+    gameData.megaCoins += 10
 }
 
 function travelToNextVillage() {
