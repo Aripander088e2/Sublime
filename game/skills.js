@@ -76,11 +76,11 @@ for (let i = 0; i < skills.length; i++) {
 
 
 function eat() {
-    if (gameData.eatBar == 0 && gameData.eat < 100) {
+    if (gameData.eatBar == 0 && gameData.eat < 400) {
         if (gameData.foodTypeToggle == 0)
-			startEating ('limes', 5)
+			startEating ('limes', 15)
         else if (gameData.foodTypeToggle == 1)
-			startEating ('rottenLimes', 1)
+			startEating ('rottenLimes', 3)
     }
 	function startEating (type, amount) {
 		if (gameData[type] > 0) {
@@ -98,8 +98,8 @@ function eatBar() {
 
 function eatBarEnd() {
     gameData.eat += gameData.foodNutritionValue * (gameData.nutritionists + 1)
-    if (gameData.eat > 100)
-        gameData.eat = 100
+    if (gameData.eat > 200)
+        gameData.eat = 200
 }
 
 function autoCollecting() {
