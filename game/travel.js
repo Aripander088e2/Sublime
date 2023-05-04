@@ -107,8 +107,8 @@ mainTabs.push (
 )
 
 function convertCoinsNow() {
-    if (gameData.coins >= 1e5 && (gameData.convertCoinsNowBar == 0 || gameData.convertCoinsNowBar == 100)) {
-        gameData.coins -= 1e5
+    if (gameData.coins >= 1e4 && (gameData.convertCoinsNowBar == 0 || gameData.convertCoinsNowBar == 100)) {
+        gameData.coins -= 1e4
 		gameData.convertedCoinsSinceTravel += 9
 		gameData.convertCoinsNowBar = 0
         convertCoinsNowBar()
