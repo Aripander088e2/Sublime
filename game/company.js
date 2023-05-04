@@ -11,13 +11,13 @@ employeeTypes = {
 	basic : {
 		applicationRandomisation: function () {
 			if (gameData.firstApplicant) {
-				gameData.applicantSpeed = 100
+				gameData.applicantSpeed = 10000
 				gameData.applicantPrice = 0
 				gameData.applicantWage = 5
 				gameData.applicantHunger = 1
 				gameData.firstApplicant = 0
 			} else {
-				gameData.applicantSpeed = (Math.floor(Math.random() * (10 + gameData.betterTraining) + 1) * 100)
+				gameData.applicantSpeed = (Math.floor(Math.random() * (10 * gameData.betterTraining) + 1) * 100)
 				gameData.applicantPrice = Math.floor(Math.random() * 200)
 				gameData.applicantWage = Math.floor(Math.random() * 16) + 5
 				gameData.applicantHunger = Math.floor(Math.random() * 20) + 1
@@ -205,7 +205,7 @@ function advertise() {
 }
 
 function advertiseBar() {
-	runBar('advertise', (7.5 * (gameData.advertisingLevel2 * 2 * gameData.advertisingLevel3 + gameData.advertisingLevel2 + 2 * gameData.advertisingLevel3 + 1)) / 100)
+	runBar('advertise', (7.5 * (gameData.advertisingLevel2 * 2 * gameData.advertisingLevel3 + gameData.advertisingLevel2 + 2 * gameData.advertisingLevel3 + 1)) / 60)
 }
 
 function advertiseBarEnd() {
