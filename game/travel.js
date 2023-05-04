@@ -109,7 +109,7 @@ mainTabs.push (
 function convertCoinsNow() {
     if (gameData.coins >= 1e5 && (gameData.convertCoinsNowBar == 0 || gameData.convertCoinsNowBar == 100)) {
         gameData.coins -= 1e5
-		gameData.convertedCoinsSinceTravel += 1
+		gameData.convertedCoinsSinceTravel += 9
 		gameData.convertCoinsNowBar = 0
         convertCoinsNowBar()
     }
@@ -117,7 +117,7 @@ function convertCoinsNow() {
 
 
 function convertCoinsNowBar() {
-	runBar('convertCoinsNow', 0.075 / Math.pow(2, gameData.convertedCoinsSinceTravel))
+	runBar('convertCoinsNow', 0.075 / Math.pow(0.3, gameData.convertedCoinsSinceTravel))
 }
 
 function convertCoinsNowBarEnd() {
