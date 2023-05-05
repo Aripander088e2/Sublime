@@ -14,7 +14,7 @@ baseVariables.push (
 )
 
 Object.assign ( gameDataBase, {
-	betaCoinsExchangeRate: 250,
+	betaCoinsExchangeRate: 25,
 	betaCoinTransferAmount: 100,
 	alphaToBetaBar: 0,
 	basicAlphaToBetaBroker: 0,
